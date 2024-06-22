@@ -1,3 +1,26 @@
+"""
+Field Class
+
+This class represents a combat field in the Combat Game. Each field has a name and can
+affect combatants in unique ways depending on the type of field.
+
+Attributes:
+    name (str): The name of the field. It can be one of "Toxic Wasteland", "Healing Meadows",
+                or "Castle Walls".
+
+Methods:
+    changeField(): Randomly selects and returns a field name from the predefined list of fields.
+    applyFieldEffect(combatant1, combatant2): Applies the field's effect on two combatants based
+                                              on the current field type.
+
+The Field class is used to create an environment that can have positive, negative, or neutral
+effects on the combatants engaged in a battle. The specific effects of each field are:
+
+    - Toxic Wasteland: Reduces the health of both combatants by 5 points.
+    - Healing Meadows: Increases the health of both combatants by 5 points, up to their maximum health.
+    - Castle Walls: No effect.
+"""
+
 import random
 
 class Field:
