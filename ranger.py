@@ -1,3 +1,16 @@
+"""
+Ranger Class
+
+This module defines the Ranger class, a subclass of Combatant. The Ranger specializes in
+ranged attacks and manages a limited number of arrows for these attacks.
+
+Attributes:
+    arrows (int): The number of arrows the Ranger has for ranged attacks.
+
+Methods:
+    attack(target): Attacks the target with ranged attacks, consuming arrows.
+    reset(): Resets the Ranger's health and arrow count to their maximum values.
+"""
 from combatant import Combatant
 
 class Ranger(Combatant):
