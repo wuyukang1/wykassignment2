@@ -1,3 +1,41 @@
+"""
+Mage and Subclasses
+
+This module defines the Mage class and its subclasses PyroMage and FrostMage. Each class
+inherits from the Combatant class and adds unique magical abilities and attributes.
+
+Mage Class:
+    A basic mage with the ability to cast spells and manage mana.
+
+Attributes:
+    mana (int): The mage's mana points, used to cast spells.
+    regenRate (int): The rate at which the mage regenerates mana.
+
+Methods:
+    reset(): Resets the mage's health and mana to their maximum values.
+    castSpell(): A placeholder method to be overridden by subclasses.
+
+PyroMage Class:
+    A subclass of Mage specializing in fire spells.
+
+Attributes:
+    flameBoost (int): A multiplier for the PyroMage's fire spell damage.
+
+Methods:
+    castSpell(): Casts fire spells with different effects based on the mana cost.
+    attack(target): Attacks the target by casting a spell and dealing damage.
+
+FrostMage Class:
+    A subclass of Mage specializing in ice spells.
+
+Attributes:
+    iceBlock (bool): A status indicating whether the FrostMage is protected by an ice block.
+
+Methods:
+    takeDamage(damage): Reduces damage taken based on the ice block status.
+    castSpell(): Casts ice spells with different effects based on the mana cost.
+    attack(target): Attacks the target by casting a spell and dealing damage.
+"""
 from combatant import Combatant
 
 class Mage(Combatant):
