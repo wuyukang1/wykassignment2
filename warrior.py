@@ -1,3 +1,38 @@
+"""
+Warrior and Subclasses
+
+This module defines the Warrior class and its subclasses Dharok, Guthans, and Karil. Each class
+inherits from the Combatant class and adds unique physical abilities and attributes.
+
+Warrior Class:
+    A basic warrior with enhanced defence through armour.
+
+Attributes:
+    armourValue (int): The value of the warrior's armour, reducing damage taken.
+
+Methods:
+    takeDamage(damage): Reduces damage taken based on the armour value.
+    attack(target): Attacks the target with physical strength.
+    reset(): Resets the warrior's health and armour value to their maximum values.
+
+Dharok Class:
+    A subclass of Warrior with increased damage based on missing health.
+
+Methods:
+    attack(target): Attacks the target with additional damage based on missing health.
+
+Guthans Class:
+    A subclass of Warrior with a healing ability during attacks.
+
+Methods:
+    attack(target): Attacks the target and heals the warrior for a portion of the strength attribute.
+
+Karil Class:
+    A subclass of Warrior with enhanced ranged damage.
+
+Methods:
+    attack(target): Attacks the target with additional ranged damage.
+"""
 from combatant import Combatant
 
 class Warrior(Combatant):
