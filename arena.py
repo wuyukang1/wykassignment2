@@ -1,3 +1,23 @@
+Combat Game Test Suite
+
+This module contains unit tests for the Combat Game application. It uses pytest
+as the testing framework and covers the core functionalities of the game,
+including:
+
+1. Field creation and properties
+2. Combatant initialization
+3. Specific character class behaviors:
+   - Ranger's attack mechanism
+   - Warrior's armor system
+   - PyroMage's flame boost ability
+   - FrostMage's ice block defense
+4. Arena duel functionality
+
+Each test function focuses on a specific aspect of the game, ensuring that
+individual components work as expected. These tests help maintain the
+integrity of the game logic as new features are added or existing ones are
+modified.
+
 from field import Field
 
 class Arena:
