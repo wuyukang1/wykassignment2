@@ -1,4 +1,7 @@
 # wykassignment2
+name：吴昱慷
+id：2218040125
+
 All of my code below, in the readme is the sum of the code
 import random
 class Field:
